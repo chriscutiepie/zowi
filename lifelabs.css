@@ -1,0 +1,213 @@
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+
+    background-image: url("https://media.discordapp.net/attachments/944611991694245898/1440742472236929024/bg.png.png?ex=691f437d&is=691df1fd&hm=b72025c3509b774ef92c763607707765c1c5a6ad304a950a22ba4112d9029452&=&format=webp&quality=lossless&width=967&height=544");
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+
+
+.navbar {
+    background: #f3c9d6;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: #41577a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    font-size: 28px;
+    padding: 8px 25px;
+    font-style: italic;
+    color: #41577a;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-links .active {
+    background: #d9dce6;
+}
+
+
+
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.content {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+
+.left-box {
+    background: #d9e8f2;
+    border: 7px solid #41577a;
+    width: 60%;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+.topic-title {
+    position: absolute;
+    top: -35px;
+    left: 30px;
+    background: #b3cadd;
+    padding: 10px 25px;
+    font-size: 45px;
+    color: #41577a;
+    margin: 0;
+}
+
+.left-text {
+    padding: 90px 50px 40px 50px; 
+    font-size: 24px;              
+    line-height: 1.8;              
+    color: #41577a;
+    text-align: justify;           
+    text-justify: inter-word;
+}
+
+
+
+.right-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 35%;
+    min-width: 250px;
+    max-width: 380px;
+}
+
+
+.photo-box {
+    background: #d9e8f2;
+    border: 7px solid #f3c9d6;
+    height: 230px;
+    overflow: hidden;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+/* ABOUT US SECTION */
+.about-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.about-title {
+    background: #b3cadd;
+    width: 500px;
+    margin: 20px auto 50px;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #41577a;
+    border-radius: 5px;
+}
+
+.names-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.name-box {
+    background: #f3c9d6;
+    width: 450px;
+    padding: 15px 0;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #41577a;
+}
+
+.center-name {
+    width: 500px;
+    margin: 40px auto 0;
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .left-box {
+        width: 100%;       
+        height: auto;
+    }
+
+    .right-boxes {
+        width: 100%;      
+        max-width: none;
+    }
+
+    .photo-box {
+        height: 200px;    
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links li {
+        font-size: 18px;   
+        padding: 5px 10px;
+    }
+
+    .topic-title {
+        left: 20px;
+        font-size: 35px;
+    }
+
+    .left-text {
+        padding: 60px 20px 20px 20px;  
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}

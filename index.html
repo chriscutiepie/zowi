@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 6</title>
+    <link rel="stylesheet" href="lifelabs.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">GROUP 6</div>
+            <ul class="nav-links">
+                <li class="active" onclick="showHome()">HOME</li>
+                <li onclick="showAbout()">ABOUT US</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="page-wrapper">
+        <div class="content">
+
+            <!-- LEFT BIG BOX -->
+            <div class="left-box">
+                <h1 class="topic-title">Topic</h1>
+
+                <p class="left-text">
+                    Playing volleyball is more than just a fun game, it’s a way for students to stay active and healthy. 
+                    The sport helps improve strength, coordination, and fitness while also boosting focus, teamwork, and mood. 
+                    By learning from students who play volleyball, this study shows how the sport supports both physical and 
+                    mental well-being. Encouraging volleyball in schools can help students become healthier, happier, and 
+                    more active every day.
+                </p>
+            </div>
+
+            <div class="right-boxes">
+
+                <div class="photo-box">
+                    <img src="court.jpeg" alt="Volleyball Court">
+                </div>
+
+                <div class="photo-box">
+                    <img src="game.jpeg" alt="Volleyball Game">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about-section hidden">
+
+        <div class="about-title">Group<br>Introduction</div>
+
+        <div class="names-wrapper">
+            <div class="column">
+                <div class="name-box">Andrea Tanteo</div>
+                <div class="name-box">Rye Torres</div>
+                <div class="name-box">Mariel Samson</div>
+            </div>
+
+            <div class="column">
+                <div class="name-box">Zooey Ubalde</div>
+                <div class="name-box">Xian Villablanca</div>
+                <div class="name-box">Gwen Alcaraz</div>
+            </div>
+        </div>
+
+        <div class="name-box center-name">Chris Paul De Leon</div>
+
+    </section>
+
+
+<script>
+function showHome() {
+    document.getElementById("home").style.display = "flex";
+    document.getElementById("about").style.display = "none";
+
+    document.querySelectorAll(".nav-links li")[0].classList.add("active");
+    document.querySelectorAll(".nav-links li")[1].classList.remove("active");
+}
+
+function showAbout() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "block";
+
+    document.querySelectorAll(".nav-links li")[1].classList.add("active");
+    document.querySelectorAll(".nav-links li")[0].classList.remove("active");
+}
+</script>
+
+</body>
+</html>
